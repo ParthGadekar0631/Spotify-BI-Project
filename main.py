@@ -8,11 +8,11 @@ def run_pipeline():
     print("🚀 Fetching top tracks from Spotify...")
     get_top_tracks()
     
-    # Step 2: Transform into star schema
-    print("🧱 Building star schema...")
+    # Step 2: Build star schema from the extracted data
+    print("🧱 Building star schema tables...")
     build_star_schema()
 
-    print("✅ Pipeline complete! Check your /data and /star_schema_tables folders.")
+    print("✅ Pipeline complete! Data saved to /data and /star_schema_tables.")
 
 if __name__ == "__main__":
     run_pipeline()
